@@ -1,6 +1,6 @@
 class Artist
-  extend Memorable::ClassMethods
-  include Memorable::InstanceMethods
+  extend Memorable::ClassMethods, Findable::ClassMethods
+  include Paramable::InstanceMethods, Memorable::InstanceMethods
 
   attr_accessor :name
   attr_reader :songs
